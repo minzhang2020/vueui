@@ -3,7 +3,8 @@ const alignProps = ['top', 'middle', 'bottom']
 const directionProps = ['row', 'row-reverse', 'column', 'column-reverse']
 const prefixCls = 'vu-row'
 export default {
-  name: 'vuRow',
+  name: 'VuRow',
+  componentName: 'VuRow',
   props: {
     gutter: Number,
     tag: {
