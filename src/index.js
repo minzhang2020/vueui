@@ -1,7 +1,12 @@
 import Row from '@/components/row'
 import Col from '@/components/col'
+import Container from '@/components/container'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
+import Aside from '@/components/aside'
+import Main from '@/components/main'
 
-const components = [Row, Col]
+const components = [Row, Col, Container, Header, Footer, Aside, Main]
 
 const install = function(Vue, options) {
   Object.keys(components).forEach(c => {
