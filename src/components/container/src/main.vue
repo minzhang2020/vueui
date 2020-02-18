@@ -1,5 +1,5 @@
 <template lang="">
-  <section class="vu-container" :class="{'is-vertical':isVertical}" >
+  <section class="vu-container" :class="{ 'is-vertical': isVertical }">
     <slot></slot>
   </section>
 </template>

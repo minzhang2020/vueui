@@ -16,4 +16,4 @@ function build() {
 function temp() {
   return gulp.src('./postcss.config.js').pipe(gulp.dest('../../dist/styles'))
 }
-gulp.task('default', build, temp)
+gulp.task('default', gulp.series(build, temp))

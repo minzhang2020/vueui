@@ -1,5 +1,5 @@
 <template>
-  <aside class="vu-aside" :style="{width}">
+  <aside class="vu-aside" :style="{ width }">
     <slot></slot>
   </aside>
 </template>

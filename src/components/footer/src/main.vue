@@ -1,5 +1,5 @@
 <template lang="">
-  <footer class="vu-footer" :style="{height}" >
+  <footer class="vu-footer" :style="{ height }">
     <slot></slot>
   </footer>
 </template>
@@ -8,7 +8,7 @@ export default {
   name: 'VuFooter',
   componentName: 'VuFooter',
   props: {
-    height: String,
+    type: String,
     default: '60px'
   }
 }

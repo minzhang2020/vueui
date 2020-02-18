@@ -1,5 +1,5 @@
 <template lang="">
-  <header class="vu-header" :style="{height}" >
+  <header class="vu-header" :style="{ height }">
     <slot></slot>
   </header>
 </template>
@@ -8,7 +8,7 @@ export default {
   name: 'VuHeader',
   componentName: 'VuHeader',
   props: {
-    height: String,
+    type: String,
     default: '60px'
   }
 }
