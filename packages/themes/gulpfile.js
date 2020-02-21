@@ -16,4 +16,7 @@ function build() {
 function temp() {
   return gulp.src('./postcss.config.js').pipe(gulp.dest('../../dist/styles'))
 }
-gulp.task('default', gulp.series(build, temp))
+function copyFonts() {
+  return gulp.src('./src/fonts/**').pipe(gulp.dest('../../dist/styles/fonts'))
+}
+gulp.task('default', gulp.series(build, copyFonts, temp))

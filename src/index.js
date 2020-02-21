@@ -5,12 +5,15 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Aside from '@/components/aside'
 import Main from '@/components/main'
-
-const components = [Row, Col, Container, Header, Footer, Aside, Main]
+import Icon from '@/components/icon'
+import Button from '@/components/button'
+import ButtonGroup from '@/components/button-group'
+const components = [Row, Col, Container, Header, Footer, Aside, Main, Icon, Button, ButtonGroup]
 
 const install = function(Vue, options) {
   Object.keys(components).forEach(c => {
-    Vue.component(c.name, c)
+    const comp = components[c]
+    Vue.component(comp.name, comp)
   })
 }
 /* istanbul ignore if */
