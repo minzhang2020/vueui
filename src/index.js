@@ -8,7 +8,8 @@ import Main from '@/components/main'
 import Icon from '@/components/icon'
 import Button from '@/components/button'
 import ButtonGroup from '@/components/button-group'
-const components = [Row, Col, Container, Header, Footer, Aside, Main, Icon, Button, ButtonGroup]
+import Link from '@/components/link'
+const components = [Row, Col, Container, Header, Footer, Aside, Main, Icon, Button, ButtonGroup, Link]
 
 const install = function(Vue, options) {
   Object.keys(components).forEach(c => {
