@@ -120,7 +120,7 @@ $button = vu-button
     background-color: transparent
 
   &.is-disabled, &.is-disabled:hover, &.is-disabled:focus
-    border-color
+    border-color: transparent
 
 .{$button}-group
   clearfix()
@@ -175,14 +175,14 @@ $button = vu-button
         border-bottom-left-radius: 0
         border-left-color: rgba($--color-white, 0.5)
 
-    for $type in primary success warning danger info
-      .vu-button--{$type}
-        &:first-child
-          border-right-color: rgba($--color-white, 0.5)
+  for $type in primary success warning danger info
+    .vu-button--{$type}
+      &:first-child
+        border-right-color: rgba($--color-white, 0.5)
 
-        &:last-child
-          border-left-color: rgba($--color-white, 0.5)
+      &:last-child
+        border-left-color: rgba($--color-white, 0.5)
 
-        &:not(:first-child):not(:last-child)
-          border-left-color: rgba($--color-white, 0.5)
-          border-right-color: rgba($--color-white, 0.5)
+      &:not(:first-child):not(:last-child)
+        border-left-color: rgba($--color-white, 0.5)
+        border-right-color: rgba($--color-white, 0.5)
